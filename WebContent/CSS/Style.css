@@ -1,0 +1,297 @@
+@CHARSET "ISO-8859-1";
+
+/* navigation table to hold the navigation buttons */
+.navigationTable{
+	width: 30%; 
+	margin-left: auto; 
+	margin-right:auto; 
+	text-align: center; 
+	/*border-bottom: solid;*/ 
+	border-width: 1px;
+}
+
+/* central table used in most forms and also at the top of the Index page */
+.topTable{
+	width: 100%;
+	text-align: center;
+}
+
+/* label used to display error messages */
+.errorLabel{
+	color: red;
+	font-family: 'Segoe UI';
+	font-weight: bold;
+	font-size:15px;
+	background: black;
+}
+
+/* normal labels */
+.normalLabel{
+	color: black;
+	font-family: 'Segoe UI';
+	font-weight: bold;
+	font-size: 30px;
+}
+
+/* normal labels */
+.inputLabel{
+	color: black;
+	font-family: 'Calibri';
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/* small buttons such as log out */
+.smallButton{
+	border: none;
+	padding: 0;
+	background: none;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+.smallButton:hover {
+    color: black;
+}
+.smallButton:active {
+    position:relative;
+	top:1px;
+}
+
+
+/* navigation buttons used in user pages (overview, likes, etc) */
+.navigationButton{
+	border: none;
+	padding: 0;
+	background: none;
+    font-family: 'Calibri';
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+}
+.navigationButton:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+
+/* normal buttons */
+.button{
+	background-color: #3333ff;
+    color: white;
+	border-radius: 4px;
+    border: 1px solid #000066;
+    cursor: pointer;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    text-decoration: none;
+    height: 45px;
+    width: 100px;
+    transition: 0.5s;
+}
+.button:hover{
+	background-color: white;
+    color: #3333ff;
+}
+.button:active{
+	position: relative;
+    top: 1px;
+}
+
+
+/* download, like, & add to buttons */ 
+.smallTransparentButton{
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #000066;
+    cursor: pointer;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: #000066;
+    height: 32px;
+    width: 75px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0s;
+}
+.smallTransparentButton:hover{
+    background-color: #3333ff;
+    color: white;
+    border: 1px solid #3333ff;
+}
+
+/* the transparent Log In & Sing Up buttons at the top of the Index page */
+.transparentButton{
+    background-color:transparent;
+    border-radius: 4px;
+    border:1px solid #000066;
+    cursor:pointer;
+    font-family: 'Segoe UI';
+    font-size:16px;
+    color: #000066;
+    text-decoration:none;
+    height:45px;
+    width:100px;
+    transition: 0.5s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.transparentButton:hover{
+    background-color: #3333ff;
+    color: white;
+    border: 1px solid #3333ff;
+}
+
+
+/* style for normal text boxes */
+input[type="text"], input[type="password"]{
+	color: black;
+    font-family: 'Calibri';
+    font-size: 16px;
+    width: 450px;
+    height: 35px;
+    padding-left:6px;
+    border: 2px solid black;
+}
+
+
+
+.playlistLabel{
+	font-size: 30px; 
+	font-weight: normal;
+	text-align: left;
+	color: blue;
+	width: 70%; 
+    float: left;
+	font-family: 'Calibri';
+}
+
+
+/*style for file inputs */
+input[type="file"]{
+	color: black;
+    font-family: 'Calibri';
+    font-size: 16px;
+    width: 370px;
+    height: 35px;
+    padding-left:6px;
+}
+
+
+/* style for the search box */
+.searchBox{
+	border-left: 1px solid #CDCDCD;
+	border-top: 1px solid #CDCDCD;
+	border-bottom: 1px solid #CDCDCD;
+	border-right: none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	float: left;
+	background: transparent !important;
+	color: black;
+	font-family: 'Calibri';
+    font-size: 16px;
+    width: 500px;
+    height: 45px;
+    padding-left:6px;
+    transition: 0.5s;
+}
+.searchBox:focus{
+	background-color: white !important;
+	color: black important!;
+}
+
+/* style for select options */
+select{
+	font-family: 'Calibri';
+	font-size: 15px;
+	font-weight: bold;
+    background: transparent;
+    width: 200px;
+    border: 2px solid #3333ff;
+    height: 34px;
+    appearance: none;
+    color: #3333ff;
+    padding: 5px;
+    border-radius: 5px;
+}
+select:hover{
+	background-color: #3333ff;
+	color: white;
+}
+select:focus{
+	background: transparent;
+	color: #3333ff;
+}
+
+/* styles for displayed on search results page and playlist songs page */
+.searchMessageDiv{
+	width: 60%; 
+	margin-left: auto; 
+	margin-right:auto; 
+	text-align: left;
+}
+.searchMessageLabel{
+	color: gray; 
+	font-size: 20px; 
+	font-family: 'Calibri';
+	font-weight: bold;
+}
+
+/* style for the playlist buttons on the playlists page */
+.playlistButton{
+	font-size: 30px; 
+	font-weight: normal;
+	font-family: 'Calibri';
+	text-align: left;
+	color: blue;
+	width: 60%;
+    float: left;
+    background: none;
+    border: none;
+}
+.playlistButton:hover{
+	color: black;
+	cursor: pointer;
+}
+
+.playlistBox {
+	z-index: 10000;
+	opacity: 1;   /*supported by current Mozilla, Safari, and Opera*/ 
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 20px;
+	margin: auto;
+	position: fixed; top: 20%; bottom: 20%; left: 20%; right: 20%; width: 50%; height: 50%; text-align:center; vertical-align: middle;
+}
+
+
+/* styles for 'create new playlist' elements */
+#tbPlaylistName{
+	padding-left: 30px;
+	font-size: 18px;
+	color: blue;
+	border: none;
+	width: 250px;
+	height: 20px;
+	border-bottom: 1px solid black;
+	background: transparent;
+}
+#tbPlaylistName:focus{
+	outline: none;
+}
+
+.playlistSmallButton{
+	background-color: #3333ff; 
+	color: white; 
+	border: 1px solid #3333ff;
+	cursor: pointer;
+	height: 25px;
+	width: 70px;
+	border-radius: 4px;
+	font-size: 14px;
+	font-family: 'Segoe UI';
+}
+

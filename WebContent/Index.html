@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+<link rel="stylesheet" type="text/css" href="CSS/Animations.css">
+<meta charset="ISO-8859-1">
+<title>AudioCloud</title>
+<style>
+
+#indexBody{
+	background: url(Images/splash.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+}
+
+label{
+	color: white;
+	font-family: 'Comic Sans Ms';
+}
+
+#indexTable{
+	width: 100%; 
+	height: 100%; 
+	vertical-align: middle; 
+	text-align: center;
+}
+
+</style>
+
+<script>
+
+/*redirect events for the Log In & Sign Up button clicks*/
+function logInRedirect(){
+	window.location.href = 'LogIn.jsp'
+}
+
+function signUpRedirect(){
+	window.location.href = 'SignUp.jsp'
+}
+
+
+ /*
+ * init() is called when the page loads
+ * Checks which child page is currently loaded
+ * If it is LogIn.jsp, highlights the LogIn button at the top
+ * If it is SignUp.jsp, highlights the SignUp button at the top
+ */
+ /*
+function init(){
+	var path = window.location.pathname;
+	var logInButton = document.getElementById("bLogIn");
+	var signUpButton = document.getElementById("bSignUp");
+	
+	if (path.toString() == '/AudioCloud/LogIn.jsp'){
+		logInButton.style.background = '#3333ff';
+		logInButton.style.color = 'white';
+		logInButton.style.border = '1px solid #3333ff';
+	}
+	if (path.toString() == '/AudioCloud/SignUp.jsp'){
+		signUpButton.style.background = '#3333ff';
+		signUpButton.style.color = 'white';
+		signUpButton.style.border = '1px solid #3333ff';
+	}
+}
+ */
+ 
+
+
+</script>
+
+</head>
+
+<body id="indexBody" onload="init()">
+
+<table class="topTable">
+	<tr>
+		<td>
+ 			<input type="button" class="transparentButton" id="bLogIn" value="Log In" onclick="logInRedirect()" > 
+			<input type="button" class="transparentButton" id="bSignUp" value="Sign Up" onclick="signUpRedirect()" >
+		</td>
+		<td>
+						
+		</td>
+	</tr>
+</table>
+
+<br>
+<br>
+<br>
+
+<table id="indexTable">
+	<tr>
+		<td>
+			<img src="Images/logo.png" alt="" height="40px" width="300px">
+		</td>
+	</tr>
+	<tr>
+		<td>
+		&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>Play and Download from over a 100,000 Songs</label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>Like and Save Songs and Playlists</label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>New Songs Added Every Day</label>
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>

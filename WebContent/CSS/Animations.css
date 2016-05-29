@@ -1,0 +1,32 @@
+.slideUp{
+	animation-name: slideUp;
+	animation-duration: 0.5s;	
+	animation-timing-function: ease out;	
+	visibility: visible !important;			
+}
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}	
+	100% {
+		transform: translateY(0%);
+	}	
+}
+
+
+.fadeIn{
+	animation-name: fadeIn;
+	animation-duration: 0.5s;	
+	animation-timing-function: ease out;		
+	visibility: visible !important;	
+}
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;		
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}

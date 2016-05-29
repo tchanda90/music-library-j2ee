@@ -1,0 +1,69 @@
+/* wrapper container to hold all the song elements */
+.resultsDiv{
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	width: 60%; 
+	margin-left: auto; 
+	margin-right:auto; 
+	text-align: center;
+	font-family: 'Calibri';
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+/* container to hold the song image and the song elements */
+.wrapperDiv{
+	overflow: hidden;
+}
+
+/* container to hold the artist name */
+.artistDiv{
+	font-size: 15px;
+	text-align: left;
+	width: 100%;
+}
+	
+/* container to hold the song name */
+.songNameDiv{
+	font-size: 30px; 
+	font-weight: bold;
+	text-align: left;
+	color: blue;
+	width: 60%;
+    float: left;
+}
+
+/* container to hold the like and download buttons */
+.buttonDiv{
+	text-align: right;
+	width: 39%;
+	float: left;
+}
+
+/* container to hold the audio element */
+.audioDiv{
+	text-align: left;
+	width: 100%;
+}
+
+/* container to hold the song image */
+.imageDiv{
+	float: left; 
+	width: 12%;
+}
+
+/* song image object, and the alt image if source is not available */
+.imageObject, .altImage{
+	width: 100%; 
+	height: 100%; 
+	border-radius: 100%;
+}
+
+/* container to hold the containers of the song elements */
+.songDiv{
+	overflow: hidden; 
+	padding-left: 2%;
+}
+
+.form{
+	float: right;
+}

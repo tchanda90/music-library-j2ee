@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+<link rel="stylesheet" type="text/css" href="CSS/Animations.css">
+<meta charset="ISO-8859-1">
+<title>Admin Home</title>
+
+<script>
+function LogOutRedirect(){
+	window.location.href = "LogOut.jsp";
+}
+
+function AddSongRedirect(){
+	window.location.href = "AddSong.jsp";
+}
+
+function RemoveSongRedirect(){
+	window.location.href = "RemoveSong.jsp";
+}
+</script>
+
+</head>
+
+<body>
+<label class="normalLabel">Welcome Admin</label> <br>
+<button style="color: blue;" class="smallButton" onclick="LogOutRedirect()">LOG OUT</button>
+
+<div class="topTable">
+<table class="navigationTable" >
+	<tr>
+		<td>
+			<button class="navigationButton" id="bAddSong" onClick="AddSongRedirect()" >Add Song</button>
+		</td>
+		<td>
+		</td>
+		<td>
+			<button class="navigationButton" id="bRemoveSong" onClick="RemoveSongRedirect()" >Remove Song</button>
+		</td>
+	</tr>
+</table>
+</div>
+
+</body>
+</html>
